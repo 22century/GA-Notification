@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>DefaultValue</key>
+		<real>1</real>
+		<key>FalseValue</key>
+		<real>0.0</real>
+		<key>Key</key>
+		<string>useNotification</string>
+		<key>Title</key>
+		<string>Nitoro Gmail Options</string>
+		<key>Titles</key>
+		<array>
+			<string></string>
+		</array>
+		<key>TrueValue</key>
+		<real>1</real>
+		<key>Type</key>
+		<string>Group</string>
+	</dict>
+	<dict>
+		<key>Key</key>
+		<string>url</string>
+		<key>Title</key>
+		<string>google apps url</string>
+		<key>Type</key>
+		<string>TextField</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<real>1</real>
+		<key>FalseValue</key>
+		<real>0.0</real>
+		<key>Key</key>
+		<string>notice</string>
+		<key>Title</key>
+		<string>notice</string>
+		<key>Titles</key>
+		<array>
+			<string>use desktop notifications</string>
+			<string>none</string>
+		</array>
+		<key>TrueValue</key>
+		<real>1</real>
+		<key>Type</key>
+		<string>PopUpButton</string>
+		<key>Values</key>
+		<array>
+			<real>1</real>
+			<real>-1</real>
+		</array>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<real>15</real>
+		<key>Key</key>
+		<string>interval</string>
+		<key>MaximumValue</key>
+		<real>60</real>
+		<key>MinimumValue</key>
+		<real>1</real>
+		<key>Title</key>
+		<string>interval</string>
+		<key>Titles</key>
+		<array>
+			<string>5 minutes</string>
+			<string>10 minutes</string>
+			<string>15 minutes</string>
+			<string>20 minutes</string>
+			<string>30 minutes</string>
+			<string>60 minutes</string>
+		</array>
+		<key>Type</key>
+		<string>PopUpButton</string>
+		<key>Values</key>
+		<array>
+			<real>5</real>
+			<real>10</real>
+			<real>15</real>
+			<real>20</real>
+			<real>30</real>
+			<real>60</real>
+		</array>
+	</dict>
+</array>
+</plist>
