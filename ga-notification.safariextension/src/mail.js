@@ -9,11 +9,6 @@ function Mail() {
 Mail.prototype = {
 
     /**
-     * @type {string}
-     */
-    _url : '',
-
-    /**
      * @type {number}
      */
     _timerId: 0,
@@ -55,15 +50,25 @@ Mail.prototype = {
     /**
      * @returns {string}
      */
+    get domain(){
+        return (safari.extension.settings.hasOwnProperty('domain'))
+            ?  safari.extension.settings.domain : '';
+    },
+
+    /**
+     * @returns {string}
+     */
     get url(){
-        return 'https://mail.google.com/mail/';
+        return (this.domain !== '')
+            ? 'https://mail.google.com/a/' + this.domain
+            : 'https://mail.google.com/mail';
     },
 
     /**
      * @returns {string}
      */
     get feedUrl(){
-        return this.url + 'feed/atom';
+        return this.url + '/feed/atom';
     },
 
     /**
@@ -165,8 +170,6 @@ Mail.prototype = {
     onChange: function(e){
         if (e.key === 'interval') {
             this.resetTimer();
-        } else if (e.key === 'url') {
-            this._url = '';
         }
     }
 
