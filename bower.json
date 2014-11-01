@@ -1,0 +1,19 @@
+{
+  "name": "gmail-observer",
+  "version": "0.3.0",
+  "authors": [
+    "22century"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "zepto-full": "~1.1.2"
+  }
+}
