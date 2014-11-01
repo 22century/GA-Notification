@@ -5,50 +5,32 @@
 	<key>Author</key>
 	<string>22century</string>
 	<key>Builder Version</key>
-	<string>9537.74.9</string>
+	<string>10600.1.25</string>
 	<key>CFBundleDisplayName</key>
-	<string>GA-Notification</string>
+	<string>Gmail Observer</string>
 	<key>CFBundleIdentifier</key>
-	<string>free.century22.ga-notification</string>
+	<string>com.century.gmailobserver</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.2</string>
+	<string>0.3</string>
 	<key>CFBundleVersion</key>
-	<string>0.2</string>
+	<string>0.3</string>
 	<key>Chrome</key>
 	<dict>
-		<key>Database Quota</key>
-		<real>1048576</real>
 		<key>Global Page</key>
 		<string>global.html</string>
 		<key>Toolbar Items</key>
 		<array>
 			<dict>
 				<key>Command</key>
-				<string>cmd_mail</string>
+				<string>cmd.mail</string>
 				<key>Identifier</key>
-				<string>tool_mail</string>
+				<string>item.mail</string>
 				<key>Image</key>
-				<string>image/icon-mail.png</string>
-				<key>Include By Default</key>
-				<true/>
+				<string>images/icon-mail.png</string>
 				<key>Label</key>
-				<string>Mail</string>
-				<key>Palette Label</key>
-				<string></string>
-			</dict>
-			<dict>
-				<key>Command</key>
-				<string>cmd_calendar</string>
-				<key>Identifier</key>
-				<string>tool_calendar</string>
-				<key>Image</key>
-				<string>image/icon-calendar.png</string>
-				<key>Include By Default</key>
-				<false/>
-				<key>Label</key>
-				<string>Calendar</string>
+				<string>Gmail Observer</string>
 			</dict>
 		</array>
 	</dict>
@@ -57,6 +39,8 @@
 		<key>Scripts</key>
 		<dict/>
 	</dict>
+	<key>DeveloperIdentifier</key>
+	<string>7Q7M6X9CRN</string>
 	<key>ExtensionInfoDictionaryVersion</key>
 	<string>1.0</string>
 	<key>Permissions</key>
@@ -69,5 +53,7 @@
 			<string>All</string>
 		</dict>
 	</dict>
+	<key>Website</key>
+	<string>https://github.com/22century</string>
 </dict>
 </plist>

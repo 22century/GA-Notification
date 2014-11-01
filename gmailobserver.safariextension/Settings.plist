@@ -3,29 +3,17 @@
 <plist version="1.0">
 <array>
 	<dict>
-		<key>Key</key>
-		<string>domain</string>
-		<key>Title</key>
-		<string>google apps domain</string>
-		<key>Type</key>
-		<string>TextField</string>
-	</dict>
-	<dict>
 		<key>DefaultValue</key>
 		<real>1</real>
-		<key>FalseValue</key>
-		<real>0.0</real>
 		<key>Key</key>
 		<string>notice</string>
 		<key>Title</key>
-		<string>notice</string>
+		<string>通知センター</string>
 		<key>Titles</key>
 		<array>
-			<string>use desktop notifications</string>
-			<string>none</string>
+			<string>使う</string>
+			<string>使わない</string>
 		</array>
-		<key>TrueValue</key>
-		<real>1</real>
 		<key>Type</key>
 		<string>PopUpButton</string>
 		<key>Values</key>
@@ -36,7 +24,7 @@
 	</dict>
 	<dict>
 		<key>DefaultValue</key>
-		<real>15</real>
+		<real>10</real>
 		<key>Key</key>
 		<string>interval</string>
 		<key>MaximumValue</key>
@@ -44,15 +32,14 @@
 		<key>MinimumValue</key>
 		<real>1</real>
 		<key>Title</key>
-		<string>interval</string>
+		<string>更新頻度</string>
 		<key>Titles</key>
 		<array>
-			<string>5 minutes</string>
-			<string>10 minutes</string>
-			<string>15 minutes</string>
-			<string>20 minutes</string>
-			<string>30 minutes</string>
-			<string>60 minutes</string>
+			<string>5分</string>
+			<string>10分</string>
+			<string>15分</string>
+			<string>30分</string>
+			<string>60分</string>
 		</array>
 		<key>Type</key>
 		<string>PopUpButton</string>
@@ -61,10 +48,17 @@
 			<real>5</real>
 			<real>10</real>
 			<real>15</real>
-			<real>20</real>
 			<real>30</real>
 			<real>60</real>
 		</array>
+	</dict>
+	<dict>
+		<key>Key</key>
+		<string>domain</string>
+		<key>Title</key>
+		<string>Google Apps ドメイン</string>
+		<key>Type</key>
+		<string>TextField</string>
 	</dict>
 </array>
 </plist>
