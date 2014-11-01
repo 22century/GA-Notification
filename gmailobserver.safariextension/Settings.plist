@@ -60,5 +60,13 @@
 		<key>Type</key>
 		<string>TextField</string>
 	</dict>
+	<dict>
+		<key>Key</key>
+		<string>custom_url</string>
+		<key>Title</key>
+		<string>カスタムURL</string>
+		<key>Type</key>
+		<string>TextField</string>
+	</dict>
 </array>
 </plist>

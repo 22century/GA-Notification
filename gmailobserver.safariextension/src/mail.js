@@ -86,8 +86,11 @@
          */
         openMail: function () {
             var mailTab = null;
+            var url = client.customUrl ? client.customUrl : client.url;
+
             safari.application.activeBrowserWindow.tabs.some(function(safariBrowserTab){
-                if (safariBrowserTab.url.indexOf(client.url) === 0) {
+                if (safariBrowserTab.url.indexOf(url) === 0
+                ||  safariBrowserTab.url.indexOf(client.urlPrefix) === 0) {
                     mailTab = safariBrowserTab;
                     return true;
                 }
@@ -95,7 +98,7 @@
             });
 
             if (mailTab === null) {
-                safari.application.activeBrowserWindow.openTab().url = client.url;
+                safari.application.activeBrowserWindow.openTab().url = url;
             } else {
                 mailTab.activate();
             }

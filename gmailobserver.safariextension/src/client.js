@@ -14,6 +14,8 @@ var Client;
 
     Client.prototype = {
 
+        urlPrefix: 'https://mail.google.com',
+
         /**
          * @returns {void}
          */
@@ -50,8 +52,16 @@ var Client;
          */
         get url () {
             return (this.domain !== '')
-                ? 'https://mail.google.com/a/' + this.domain
-                : 'https://mail.google.com/mail';
+                ? this.urlPrefix + '/a/' + this.domain
+                : this.urlPrefix + '/mail';
+        },
+
+        /**
+         * @returns {string}
+         */
+        get customUrl () {
+            return (safari.extension.settings.hasOwnProperty('custom_url'))
+                ?  safari.extension.settings.custom_url : '';
         },
 
         /**
