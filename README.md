@@ -6,5 +6,9 @@ Safari 6+
 * Google Appsの独自ドメイン対応
 * 通知センター対応
 
+#### 使い方
+
+Gmailにログインしていれば動きます。  
+ログインしてないとBASIC認証のログインダイアログが出ますがGoogle側で表示しているものです。
 
 [Download](https://github.com/22century/Gmail-Observer/releases/download/0.4.0/gmailobserver.safariextz)
