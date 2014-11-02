@@ -11,4 +11,8 @@ Safari 6+
 Gmailにログインしていれば動きます。  
 ログインしてないとBASIC認証のログインダイアログが出ますがGoogle側で表示しているものです。
 
+#### 設定
+
+Safariのメニュー 環境設定 → 機能拡張 から
+
 [Download](https://github.com/22century/Gmail-Observer/releases/download/0.4.0/gmailobserver.safariextz)
