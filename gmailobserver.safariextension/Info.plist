@@ -15,7 +15,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>0.4</string>
 	<key>CFBundleVersion</key>
-	<string>0.4.0</string>
+	<string>0.4.1</string>
 	<key>Chrome</key>
 	<dict>
 		<key>Global Page</key>
@@ -54,6 +54,6 @@
 		</dict>
 	</dict>
 	<key>Website</key>
-	<string>https://github.com/22century</string>
+	<string>https://github.com/22century/Gmail-Observer</string>
 </dict>
 </plist>
