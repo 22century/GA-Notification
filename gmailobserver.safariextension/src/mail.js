@@ -89,12 +89,17 @@
             var url = client.customUrl ? client.customUrl : client.url;
 
             safari.application.activeBrowserWindow.tabs.some(function(safariBrowserTab){
-                if (safariBrowserTab.url.indexOf(url) === 0
+                if (typeof safariBrowserTab.url === 'undefined'
+                ||  typeof safariBrowserTab.page === 'undefined') {
+                    // reader, favorite
+                    return false;
+                } else if (safariBrowserTab.url.indexOf(url) === 0
                 ||  safariBrowserTab.url.indexOf(client.urlPrefix) === 0) {
                     mailTab = safariBrowserTab;
                     return true;
+                } else {
+                    return false;
                 }
-                return false;
             });
 
             if (mailTab === null) {
